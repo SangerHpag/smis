@@ -13,7 +13,7 @@ compiling and running.
 ### Download and Compile:
 Requirements for compiling: Cmake > = 2.6.4
 
-	$ git clone https://github.com/fg6/smis.git
+	$ git clone https://github.com/SangerHpag/smis.git
 	$ cd smis 
 	$ ./makeall.sh
 

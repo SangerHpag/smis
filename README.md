@@ -5,11 +5,6 @@ to scaffold an initial draft assembly. The long reads are shred in smaller segme
 then aligned against the draft assembly and the spinner scaffolder looks for
 links between contigs and creates scaffolds. 
 
-Original pipeline from Zemin Ning (zn1@sanger.ac.uk): http://www.sanger.ac.uk/science/tools/smis.
-Version here modified to use the bwa aligner instead of smalt, and to automize
-compiling and running.
-
-
 ### Download and Compile:
 Requirements for compiling: Cmake > = 2.6.4
 

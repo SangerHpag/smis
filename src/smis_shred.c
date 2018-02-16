@@ -182,9 +182,9 @@ void Align_Process_sh(char **argv,int args,int nRead)
        }else{
 	 strncpy(nametag1,ctgname,10);
 
-	 if(i<593 && i>590)pri=1;
-	 else if(i<400 && i>308)pri=1;
-	 else pri=0;
+	 //if(i<593 && i>590)pri=1;
+	 //else if(i<400 && i>308)pri=1;
+	 //else pri=0;
 
 
 	 if(pri) std::cout << i << " "<< rdlen << " name1 " << nametag1 << " name2  "
@@ -197,9 +197,9 @@ void Align_Process_sh(char **argv,int args,int nRead)
 	 strncpy(nametag2,st+1,ed-st-1);
 	 rdidt = n_contig;
 	
- 	if(nametag2=="00000573_0006781")
-	std::cout << i << " "<< rdlen << " name1 " << nametag1 << " name2  "
-                        << nametag2 << std::endl;
+ 	//if(nametag2=="00000573_0006781")
+	//std::cout << i << " "<< rdlen << " name1 " << nametag1 << " name2  "
+          //              << nametag2 << std::endl;
  
       }
        

@@ -53,7 +53,7 @@ static int read_len = 2000;
 static int step_len = 150;
 static int min_len = 3000;
 static float num_cover = 12.0;
-static char ctgname[30];
+static char ctgname[250];
 
 void Align_Process_sh(char **argv,int args,int nRead);
 

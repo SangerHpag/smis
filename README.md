@@ -17,6 +17,14 @@ Requirements for compiling: Cmake > = 2.6.4
 #### External packages
 The smis pipeline downloads and installs the bamtools for reading bam files (https://github.com/pezmaster31/bamtools) 
 
+### Test using E.coli data
+	$ cd /full/path/to/smis/example
+	$ ./run_ecoli_test.sh
+
+The script launch smis in the local smis\_test folder scaffolding the draft assembly using ONT fastq data in the smis/example/ecoli\_data folder.
+The results will be in smis/example/smis\_test/spinner\_scaffolds.fasta and can be compared with the in-house
+generated scaffolds in smis/ecoli\_data/spinner\_scaffolds.fasta
+
 
 ### Run 
 #### Setup 

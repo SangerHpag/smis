@@ -1,0 +1,5 @@
+E.coli draft assembly and nanopore reads
+
+draft_assembly.fasta: obtained with the SPAdes assembler using 800X of MiSeq data
+ont.fastq: 20X Nanopore reads extracted from the Marc Phase I data release (Ip CL, Loose M, Tyson JR, de Cesare M, Brown BL, Jain M,et al.  F1000Res 2015;4:1075 )
+

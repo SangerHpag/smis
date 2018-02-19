@@ -146,7 +146,7 @@ fi ##aligner selection
 echo -e "\n
    Scaffolding Reference using Fake-Mate Pairs\n"  >> $outp
 
-echo '################## Scaffolding ... ##################' > $outp
+echo '################## Scaffolding ... ##################' >> $outp
 sed "s#MIN_EDGE#$min_edge#g" $bindir/../scafsettings.txt | sed  "s#NUM_SIGMA#$num_sigma#g" | sed  "s#MIN_LEN#$minlen#g" > settings.txt
 printf "1\nTesting string\nfasta-in\ngenome.fasta\n" > files.txt
 

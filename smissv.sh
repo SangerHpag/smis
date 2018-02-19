@@ -129,16 +129,16 @@ elif  [ $aligner == "bwa" ]; then
   fi
 
   if [ $rerun == "y" ] || [ $rerun == "yes" ] || [ ! -f "bwa_sorted.bam" ] ; then
-    echo -e "\nAligning Fake-Mate Pairs to References with BWA\n"  >> $outp
-    
+    echo -e "\nAligning Fake-Mate Pairs to References with BWA:\n"  >> $outp
+     
     $mybwa index genome.fasta &>> $outp 
-    $mybwa mem -t $nodes -T $mapscore  -A $match -O $gapopen -E $gapext -B $subst  genome.fasta fakemates_1.fastq fakemates_2.fastq | samtools view -Sb - | samtools sort -o bwa_sorted.bam - &>> $outp
+    $mybwa mem -t $nodes -T $mapscore  -A $match -O $gapopen -E $gapext -B $subst  genome.fasta fakemates_1.fastq fakemates_2.fastq 2>> $outp | samtools view -Sb - | samtools sort -o bwa_sorted.bam - 
   fi
 
   if [ $rerun == "y" ] || [ $rerun == "yes" ] || [ ! -f "mates_id60_mscore10.out" ] ; then
     echo -e "\n
      Sort Aligned Fake-Mate Pairs by their Position in Reference\n"  >> $outp
-    $bindir/smis_sort bwa_sorted.bam 
+    $bindir/smis_sort bwa_sorted.bam &>> outp 
   fi
 fi ##aligner selection
 

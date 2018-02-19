@@ -25,7 +25,7 @@ The script launch smis in the local smis\_test folder scaffolding the draft asse
 The results will be in smis/example/smis\_test/spinner\_scaffolds.fasta and can be compared with the in-house
 generated scaffolds in smis/ecoli\_data/spinner\_scaffolds.fasta .
 
-The the default parameters (24 threads) the test takes about 4 minutes.
+With the default parameters (24 threads) the test takes about 4 minutes.
 
 ### Run 
 #### Setup 

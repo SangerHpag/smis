@@ -8,4 +8,4 @@ cd $folder/smis_test
 ./mysmissv.sh  &>> log.out
 
 
-echo Scaffoldsa are in  smis_test/spinner_scaffolds.fasta
+echo Scaffolds are in  smis_test/spinner_scaffolds.fasta

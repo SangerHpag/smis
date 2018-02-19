@@ -23,8 +23,9 @@ The smis pipeline downloads and installs the bamtools for reading bam files (htt
 
 The script launch smis in the local smis\_test folder scaffolding the draft assembly using ONT fastq data in the smis/example/ecoli\_data folder.
 The results will be in smis/example/smis\_test/spinner\_scaffolds.fasta and can be compared with the in-house
-generated scaffolds in smis/ecoli\_data/spinner\_scaffolds.fasta
+generated scaffolds in smis/ecoli\_data/spinner\_scaffolds.fasta .
 
+The the default parameters (24 threads) the test takes about 4 minutes.
 
 ### Run 
 #### Setup 
